@@ -44,10 +44,6 @@ function TodoCtrl($scope) {
   
   $scope.clear = function() {
     var oldTodos = $scope.todos;
-
-    //test comment, yo!
-
-    console.log(oldTodos);
     $scope.todos = [];
     angular.forEach(oldTodos, function(todo) {
       if (!todo.done) $scope.todos.push(todo);
